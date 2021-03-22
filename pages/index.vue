@@ -3,19 +3,19 @@
     <div>
       <Logo />
       <h1 class="title">
-        nuxt-fargate_app
+        Nuxt.js / AWS Fargate App
       </h1>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://jtk.hatenablog.com/"
           target="_blank"
           rel="noopener noreferrer"
           class="button--green"
         >
-          Documentation
+          Blog
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/yuheijotaki/nuxt-fargate_app"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"

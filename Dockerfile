@@ -5,6 +5,6 @@ WORKDIR /var/www/nuxt-fargate_app
 COPY ./ /var/www/nuxt-fargate_app
 RUN npm run build
 
-EXPOSE 3000
+EXPOSE 80
 
 ENTRYPOINT ["npm", "run", "start"]
