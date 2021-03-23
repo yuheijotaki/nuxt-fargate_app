@@ -1,6 +1,0 @@
-[
-  {
-    "name": "target-container-name",
-    "imageUri": "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${REPOSITORY_NAME}:${IMAGE_TAG}"
-  }
-]
