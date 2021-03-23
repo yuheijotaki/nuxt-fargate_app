@@ -34,8 +34,8 @@ phases:
     finally:
       - echo Build completed on `date`
 
-# artifacts:
-#   files:
-#     - imageDetail.json
-#     - appspec.yaml
+artifacts:
+  files:
+    - imagedefinitions.json
+    - appspec.yaml
 #     - taskdef.json
