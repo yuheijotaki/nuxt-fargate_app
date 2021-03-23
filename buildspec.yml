@@ -7,7 +7,7 @@ phases:
       docker: 20
   pre_build:
     commands:
-      - yarn
+      # - yarn
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region ${AWS_DEFAULT_REGION} | docker login --username AWS --password-stdin ${REPOSITORY_URI}
       - REPOSITORY_URI=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com
@@ -16,7 +16,7 @@ phases:
       # - IMAGE_TAG=${COMMIT_HASH:=latest}
   build:
     commands:
-      - yarn build
+      # - yarn build
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t ${REPOSITORY_NAME}:${IMAGE_TAG} .
