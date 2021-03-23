@@ -23,6 +23,7 @@ phases:
       - docker tag ${REPOSITORY_NAME}:latest ${REPOSITORY_URI}/${REPOSITORY_NAME}:${IMAGE_TAG}
   post_build:
     commands:
+      - echo Pushing started on `date`
       - echo Pushing the Docker image...
       - docker push ${REPOSITORY_URI}/${REPOSITORY_NAME}:${IMAGE_TAG}
       # - echo Writing image definitions file...
