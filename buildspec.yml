@@ -8,7 +8,6 @@ phases:
   pre_build:
     commands:
       - echo test
-      - echo test
       - npm install
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region ${AWS_DEFAULT_REGION} | docker login --username AWS --password-stdin ${REPOSITORY_URI}
