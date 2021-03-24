@@ -54,7 +54,7 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '12.x'
 
     - name: Npm Install & App Build
       run: |
@@ -90,4 +90,3 @@ jobs:
         service: nuxt-fargate-service
         cluster: default
         wait-for-service-stability: true
-  
