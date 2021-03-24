@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecs-env-20210324",
+  "executionRoleArn": "arn:aws:iam::AWS_ACCOUNT_ID:role/nuxt-fargate_app",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -34,7 +34,7 @@
       "secrets": [
         {
           "valueFrom": "account-id",
-          "name": "ACCOUNT_ID"
+          "name": "AWS_ACCOUNT_ID"
         }
       ],
       "dockerSecurityOptions": null,
@@ -64,7 +64,7 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecs-env-20210324",
+  "taskRoleArn": "arn:aws:iam::AWS_ACCOUNT_ID:role/nuxt-fargate_app",
   "family": "nuxt-fargate-task",
   "pidMode": null,
   "requiresCompatibilities": [
