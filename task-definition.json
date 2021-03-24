@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecs-env-20210324",
+  "executionRoleArn": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/ecs-env-20210324",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -31,12 +31,6 @@
       "dnsServers": null,
       "mountPoints": [],
       "workingDirectory": null,
-      "secrets": [
-        {
-          "valueFrom": "account-id",
-          "name": "ACCOUNT_ID"
-        }
-      ],
       "dockerSecurityOptions": null,
       "memory": null,
       "memoryReservation": null,
@@ -64,7 +58,7 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecs-env-20210324",
+  "taskRoleArn": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/ecs-env-20210324",
   "family": "nuxt-fargate-task",
   "pidMode": null,
   "requiresCompatibilities": [
