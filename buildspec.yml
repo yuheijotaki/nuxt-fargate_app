@@ -28,16 +28,16 @@ phases:
       - echo Pushing started on `date`
       - echo Pushing the Docker image...
       - docker push ${REPOSITORY_URI}/${REPOSITORY_NAME}:${IMAGE_TAG}
-      - printf '{"Version":"1.0","ImageURI":"%s"}' ${REPOSITORY_NAME}:${IMAGE_TAG} > imageDetail.json
+      # - printf '{"Version":"1.0","ImageURI":"%s"}' ${REPOSITORY_NAME}:${IMAGE_TAG} > imageDetail.json
       # - echo Writing image definitions file...
       # - printf '{"ImageURI":"%s"}' ${REPOSITORY_URI}/${REPOSITORY_NAME}:${IMAGE_TAG} > imageDetail.json
       # - envsubst < taskdef.template > taskdef.json
     finally:
       - echo Build completed on `date`
 
-artifacts:
-  files:
-    - imageDetail.json
+# artifacts:
+#   files:
+#     - imageDetail.json
     # - imagedefinitions.json
     # - appspec.yaml
 #     - taskdef.json
