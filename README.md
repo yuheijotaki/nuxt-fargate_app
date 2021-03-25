@@ -2,7 +2,7 @@
 
 ## 構成
 
-img
+![AWS構成図](https://raw.githubusercontent.com/yuheijotaki/nuxt-fargate_app/master/docs/img/structure-aws.png)
 
 1. Nuxt.js（SSR）のコードを GitHub にプッシュするとCodePipelineが走る。
 2. CodeBuild でイメージをビルド。ECRへイメージを登録
@@ -10,7 +10,7 @@ img
 4. ECS（Fargate）が ECR からイメージ取得。
 5. CodeDeploy が ECS（Fargate）へデプロイ。
 
-img
+![アプリケーション構成図](https://raw.githubusercontent.com/yuheijotaki/nuxt-fargate_app/master/docs/img/structure-app.png)
 
 VPC内はコンテナタスクを各サブネットに配置しALBで分散する。
 
